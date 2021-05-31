@@ -2,18 +2,18 @@ import { useState } from "react";
 import "./styles.css";
 
 export default function App() {
-  const [number, setNumber] = useState(0);
+  const [count, setCount] = useState(0);
 
   const handleIncrement = () => {
-    setNumber(number + 1);
+    setCount(count + 1);
   };
 
   const handleDecrement = () => {
-    setNumber(number - 1);
+    setCount(count - 1);
   };
   return (
     <div className="App">
-      <div>{number}</div>
+      <div>{count}</div>
       <button onClick={handleIncrement}>+</button>
       <button onClick={handleDecrement}>-</button>
     </div>
